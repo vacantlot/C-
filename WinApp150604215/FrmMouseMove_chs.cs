@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinApp150604215
@@ -39,6 +32,23 @@ namespace WinApp150604215
                 {
                     location = 4;
                     label3.Location = label2.Location;
+                }
+            }
+            else
+            {
+                if ((e.Button == MouseButtons.Left) && (e.Clicks == 2))
+                {
+                    label3.Visible = false;
+                    if (location == 3)
+                    {
+                        location = 1;
+                        label1.Visible = true;
+                    }
+                    else if (location == 4)
+                    {
+                        location = 2;
+                        label2.Visible = true;
+                    }
                 }
             }
         }
