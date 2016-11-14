@@ -62,5 +62,11 @@ namespace WinApp150604215
         {
             Application.Restart();
         }
+
+        private void TSMSYAH_Click(object sender, EventArgs e)
+        {
+            FrmSX_chs frmSX_chs = new FrmSX_chs();
+            frmSX_chs.Show();
+        }
     }
 }

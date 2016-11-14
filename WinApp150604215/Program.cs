@@ -14,9 +14,16 @@ namespace WinApp150604215
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmStart_chs());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new FrmSX_chs());
+            }
+            catch
+            {
+
+            }
         }
     }
 }

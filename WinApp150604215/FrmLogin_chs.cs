@@ -13,7 +13,7 @@ namespace WinApp150604215
         public FrmLogin_chs(FrmMain_chs frmMian)
         {
             InitializeComponent();
-            frmMain = frmMian;             //将传过来的FormMain全部赋值给frmMain，这样就可以在这边调用FormMain了
+            frmMain = frmMian;             //将传过来的FormMain全部赋值给frmMain，这样就可以在这FrmLogin中调用FormMain了
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -23,7 +23,6 @@ namespace WinApp150604215
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
             if (userNameTextBox.Text == "" && passWordTextBox.Text == "")
             {

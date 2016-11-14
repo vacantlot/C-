@@ -49,47 +49,29 @@ namespace WinApp150604215
             }
         }
      
-        private void DoubleColorBall(int[] dcb)
-        {
+        private void DoubleColorBall(int[] _Num)
+        {           
             Random random = new Random();
-            for (int i = 0; i < (dcb.Length - 1); i++)
+            int i = 0;
+            while (true)
             {
-                int num2 = random.Next(1, 0x22);
-                dcb[i] = num2;
+                int temp = random.Next(1, 34);
+                _Num[i] = temp;
                 for (int j = 0; j < i; j++)
                 {
-                    if (dcb[j] == num2)
+                    if (_Num[j] == temp)
                     {
-                        i--;
+                        i -= 1;
                         break;
                     }
                 }
+                i++;
+                if (i == 7) break;
             }
-            dcb[6] = random.Next(1, 0x11);
-
-            //Random random = new Random();           
-            //int i = 0;
-            //while(true)
-            //{
-            //    int temp = random.Next(1 , 34);
-            //    _Num[i] = temp;
-            //    for (int j = 0; j < i; j++)
-            //    {
-            //        if (_Num[j] == temp)
-            //        {
-            //            i -= 1;
-            //            break;
-            //        }
-            //    }
-            //    i++;
-            //    if (i == 7) break;
-            //}
-            //_Num[6] = random.Next(1 , 17);
+            _Num[6] = random.Next(1, 17);
 
         }
-
-        
-
+       
         private void FrmDoubleColorBall_Load(object sender, EventArgs e)
         {
             timer1 = new Timer();
