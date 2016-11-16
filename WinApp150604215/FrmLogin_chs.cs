@@ -24,31 +24,31 @@ namespace WinApp150604215
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (userNameTextBox.Text == "" && passWordTextBox.Text == "")
+            if (TxtName.Text == "" && TxtPassWord.Text == "")
             {
                 MessageBox.Show("请输入账号！");
-                userNameTextBox.Focus();
+                TxtName.Focus();
             }
-            if (userNameTextBox.Text != "f" && passWordTextBox.Text != "")
+            if (TxtName.Text != "f" && TxtPassWord.Text != "")
             {
                 MessageBox.Show("账号错误！\n 请重新输入…");
-                userNameTextBox.Clear();
-                userNameTextBox.Focus();
+                TxtName.Clear();
+                TxtName.Focus();
             }
-            if (userNameTextBox.Text == "f" && passWordTextBox.Text == "")
+            if (TxtName.Text == "f" && TxtPassWord.Text == "")
             {
                 MessageBox.Show("请输入密码！");
-                passWordTextBox.Focus();
+                TxtPassWord.Focus();
             }
             
-           else  if (passWordTextBox.Text != "f" && userNameTextBox.Text == "f")
+           else  if (TxtPassWord.Text != "f" && TxtName.Text == "f")
             {
                 MessageBox.Show("密码错误！");
-                passWordTextBox.SelectAll();
-                passWordTextBox.Focus();
+                TxtPassWord.SelectAll();
+                TxtPassWord.Focus();
             }
 
-            if (userNameTextBox.Text == "f" && passWordTextBox.Text == "f")
+            if (TxtName.Text == "f" && TxtPassWord.Text == "f")
             {
                 MessageBox.Show("登录成功！");
                 this.Close();
@@ -57,7 +57,5 @@ namespace WinApp150604215
 
 
         }
-
-       
     }
 }

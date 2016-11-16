@@ -62,6 +62,12 @@
     <Compile Include="FrmMain_chs.Designer.cs">
       <DependentUpon>FrmMain_chs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOrderFoods_chs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderFoods_chs.Designer.cs">
+      <DependentUpon>FrmOrderFoods_chs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmStart_chs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain_chs.resx">
       <DependentUpon>FrmMain_chs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderFoods_chs.resx">
+      <DependentUpon>FrmOrderFoods_chs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStart_chs.resx">
       <DependentUpon>FrmStart_chs.cs</DependentUpon>

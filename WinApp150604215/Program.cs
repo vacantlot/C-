@@ -18,7 +18,7 @@ namespace WinApp150604215
             {
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new FrmSX_chs());
+                Application.Run(new FrmOrderFoods_chs());
             }
             catch
             {
