@@ -58,12 +58,16 @@
             // 
             // lb_Meun
             // 
+            this.lb_Meun.ColumnWidth = 10;
             this.lb_Meun.FormattingEnabled = true;
             this.lb_Meun.ItemHeight = 12;
             this.lb_Meun.Location = new System.Drawing.Point(12, 83);
             this.lb_Meun.Name = "lb_Meun";
+            this.lb_Meun.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lb_Meun.Size = new System.Drawing.Size(146, 256);
+            this.lb_Meun.Sorted = true;
             this.lb_Meun.TabIndex = 2;
+            this.lb_Meun.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_Meun_MouseMove);
             // 
             // lb_OrderedMeun
             // 
@@ -71,7 +75,9 @@
             this.lb_OrderedMeun.ItemHeight = 12;
             this.lb_OrderedMeun.Location = new System.Drawing.Point(287, 83);
             this.lb_OrderedMeun.Name = "lb_OrderedMeun";
+            this.lb_OrderedMeun.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lb_OrderedMeun.Size = new System.Drawing.Size(146, 256);
+            this.lb_OrderedMeun.Sorted = true;
             this.lb_OrderedMeun.TabIndex = 3;
             // 
             // button1
@@ -82,6 +88,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "添加选择";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -91,6 +98,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "添加所有";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -100,6 +108,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "取消选择";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -109,6 +118,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "取消所有";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FrmOrderFoods_chs
             // 
@@ -124,7 +134,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lab1);
             this.Name = "FrmOrderFoods_chs";
-            this.Text = "FrmOrderFoods_chs";
+            this.Text = "电子菜单";
             this.Load += new System.EventHandler(this.FrmOrderFoods_chs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

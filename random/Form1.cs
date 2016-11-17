@@ -152,7 +152,7 @@ namespace random
 
         private void textBox5_MouseEnter(object sender, EventArgs e)
         {
-            toolTip1.SetToolTip(textBox5, "随机抽取出的序号");
+            toolTip1.SetToolTip(textBox5, "随机抽取出的序号");            
         }
 
        

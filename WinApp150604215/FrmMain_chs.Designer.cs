@@ -37,9 +37,9 @@
             this.ShiYan_chs3_3 = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan_chs3_4 = new System.Windows.Forms.ToolStripMenuItem();
             this.实验4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMSYAH = new System.Windows.Forms.ToolStripMenuItem();
-            this.TlSMMeun = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSM = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShiYan4_1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShiYan4_2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ShiYan4_3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +68,14 @@
             // 重启ToolStripMenuItem
             // 
             this.重启ToolStripMenuItem.Name = "重启ToolStripMenuItem";
-            this.重启ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.重启ToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.重启ToolStripMenuItem.Text = "重启&R";
             this.重启ToolStripMenuItem.Click += new System.EventHandler(this.重启ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -113,31 +113,32 @@
             // 实验4ToolStripMenuItem
             // 
             this.实验4ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMSYAH,
-            this.TlSMMeun,
-            this.TSM});
+            this.ShiYan4_1,
+            this.ShiYan4_2,
+            this.ShiYan4_3});
             this.实验4ToolStripMenuItem.Name = "实验4ToolStripMenuItem";
             this.实验4ToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
             this.实验4ToolStripMenuItem.Text = "实验4";
             // 
-            // TSMSYAH
+            // ShiYan4_1
             // 
-            this.TSMSYAH.Name = "TSMSYAH";
-            this.TSMSYAH.Size = new System.Drawing.Size(152, 22);
-            this.TSMSYAH.Text = "生肖爱好";
-            this.TSMSYAH.Click += new System.EventHandler(this.TSMSYAH_Click);
+            this.ShiYan4_1.Name = "ShiYan4_1";
+            this.ShiYan4_1.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_1.Text = "生肖爱好";
+            this.ShiYan4_1.Click += new System.EventHandler(this.TSMSYAH_Click);
             // 
-            // TlSMMeun
+            // ShiYan4_2
             // 
-            this.TlSMMeun.Name = "TlSMMeun";
-            this.TlSMMeun.Size = new System.Drawing.Size(152, 22);
-            this.TlSMMeun.Text = "电子菜单";
+            this.ShiYan4_2.Name = "ShiYan4_2";
+            this.ShiYan4_2.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_2.Text = "电子菜单";
+            this.ShiYan4_2.Click += new System.EventHandler(this.TlSMMeun_Click);
             // 
-            // TSM
+            // ShiYan4_3
             // 
-            this.TSM.Name = "TSM";
-            this.TSM.Size = new System.Drawing.Size(152, 22);
-            this.TSM.Text = "多控件应用";
+            this.ShiYan4_3.Name = "ShiYan4_3";
+            this.ShiYan4_3.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_3.Text = "多控件应用";
             // 
             // FrmMain_chs
             // 
@@ -170,8 +171,8 @@
         private System.Windows.Forms.ToolStripMenuItem 重启ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 实验4ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem TSMSYAH;
-        private System.Windows.Forms.ToolStripMenuItem TlSMMeun;
-        private System.Windows.Forms.ToolStripMenuItem TSM;
+        private System.Windows.Forms.ToolStripMenuItem ShiYan4_1;
+        private System.Windows.Forms.ToolStripMenuItem ShiYan4_2;
+        private System.Windows.Forms.ToolStripMenuItem ShiYan4_3;
     }
 }
