@@ -28,28 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.系统ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.回收处理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.操作记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重新加载ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.添加到ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.移除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.回收处理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.还原ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清空ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.操作记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.背景颜色ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.记录字体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.删除记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.清空记录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +79,18 @@
             this.系统ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.系统ToolStripMenuItem.Text = "系统";
             // 
+            // 重新加载ToolStripMenuItem
+            // 
+            this.重新加载ToolStripMenuItem.Name = "重新加载ToolStripMenuItem";
+            this.重新加载ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.重新加载ToolStripMenuItem.Text = "重新加载";
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.退出ToolStripMenuItem.Text = "退出";
+            // 
             // 操作ToolStripMenuItem
             // 
             this.操作ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -85,6 +99,18 @@
             this.操作ToolStripMenuItem.Name = "操作ToolStripMenuItem";
             this.操作ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.操作ToolStripMenuItem.Text = "操作";
+            // 
+            // 添加到ToolStripMenuItem
+            // 
+            this.添加到ToolStripMenuItem.Name = "添加到ToolStripMenuItem";
+            this.添加到ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.添加到ToolStripMenuItem.Text = "添加到...";
+            // 
+            // 移除ToolStripMenuItem
+            // 
+            this.移除ToolStripMenuItem.Name = "移除ToolStripMenuItem";
+            this.移除ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.移除ToolStripMenuItem.Text = "移除";
             // 
             // 回收处理ToolStripMenuItem
             // 
@@ -95,6 +121,24 @@
             this.回收处理ToolStripMenuItem.Name = "回收处理ToolStripMenuItem";
             this.回收处理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.回收处理ToolStripMenuItem.Text = "回收处理";
+            // 
+            // 还原ToolStripMenuItem
+            // 
+            this.还原ToolStripMenuItem.Name = "还原ToolStripMenuItem";
+            this.还原ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.还原ToolStripMenuItem.Text = "还原";
+            // 
+            // 删除ToolStripMenuItem
+            // 
+            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
+            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.删除ToolStripMenuItem.Text = "删除";
+            // 
+            // 清空ToolStripMenuItem
+            // 
+            this.清空ToolStripMenuItem.Name = "清空ToolStripMenuItem";
+            this.清空ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.清空ToolStripMenuItem.Text = "清空";
             // 
             // 操作记录ToolStripMenuItem
             // 
@@ -107,6 +151,30 @@
             this.操作记录ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.操作记录ToolStripMenuItem.Text = "操作记录";
             // 
+            // 背景颜色ToolStripMenuItem
+            // 
+            this.背景颜色ToolStripMenuItem.Name = "背景颜色ToolStripMenuItem";
+            this.背景颜色ToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.背景颜色ToolStripMenuItem.Text = "背景颜色...";
+            // 
+            // 记录字体ToolStripMenuItem
+            // 
+            this.记录字体ToolStripMenuItem.Name = "记录字体ToolStripMenuItem";
+            this.记录字体ToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.记录字体ToolStripMenuItem.Text = "记录字体...";
+            // 
+            // 删除记录ToolStripMenuItem
+            // 
+            this.删除记录ToolStripMenuItem.Name = "删除记录ToolStripMenuItem";
+            this.删除记录ToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.删除记录ToolStripMenuItem.Text = "删除记录";
+            // 
+            // 清空记录ToolStripMenuItem
+            // 
+            this.清空记录ToolStripMenuItem.Name = "清空记录ToolStripMenuItem";
+            this.清空记录ToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.清空记录ToolStripMenuItem.Text = "清空记录";
+            // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,76 +183,10 @@
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
-            // 重新加载ToolStripMenuItem
-            // 
-            this.重新加载ToolStripMenuItem.Name = "重新加载ToolStripMenuItem";
-            this.重新加载ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.重新加载ToolStripMenuItem.Text = "重新加载";
-            // 
-            // 退出ToolStripMenuItem
-            // 
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.退出ToolStripMenuItem.Text = "退出";
-            // 
-            // 添加到ToolStripMenuItem
-            // 
-            this.添加到ToolStripMenuItem.Name = "添加到ToolStripMenuItem";
-            this.添加到ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.添加到ToolStripMenuItem.Text = "添加到...";
-            // 
-            // 移除ToolStripMenuItem
-            // 
-            this.移除ToolStripMenuItem.Name = "移除ToolStripMenuItem";
-            this.移除ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.移除ToolStripMenuItem.Text = "移除";
-            // 
-            // 还原ToolStripMenuItem
-            // 
-            this.还原ToolStripMenuItem.Name = "还原ToolStripMenuItem";
-            this.还原ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.还原ToolStripMenuItem.Text = "还原";
-            // 
-            // 删除ToolStripMenuItem
-            // 
-            this.删除ToolStripMenuItem.Name = "删除ToolStripMenuItem";
-            this.删除ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.删除ToolStripMenuItem.Text = "删除";
-            // 
-            // 清空ToolStripMenuItem
-            // 
-            this.清空ToolStripMenuItem.Name = "清空ToolStripMenuItem";
-            this.清空ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.清空ToolStripMenuItem.Text = "清空";
-            // 
-            // 背景颜色ToolStripMenuItem
-            // 
-            this.背景颜色ToolStripMenuItem.Name = "背景颜色ToolStripMenuItem";
-            this.背景颜色ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.背景颜色ToolStripMenuItem.Text = "背景颜色...";
-            // 
-            // 记录字体ToolStripMenuItem
-            // 
-            this.记录字体ToolStripMenuItem.Name = "记录字体ToolStripMenuItem";
-            this.记录字体ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.记录字体ToolStripMenuItem.Text = "记录字体...";
-            // 
-            // 删除记录ToolStripMenuItem
-            // 
-            this.删除记录ToolStripMenuItem.Name = "删除记录ToolStripMenuItem";
-            this.删除记录ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.删除记录ToolStripMenuItem.Text = "删除记录";
-            // 
-            // 清空记录ToolStripMenuItem
-            // 
-            this.清空记录ToolStripMenuItem.Name = "清空记录ToolStripMenuItem";
-            this.清空记录ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.清空记录ToolStripMenuItem.Text = "清空记录";
-            // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // statusStrip1
@@ -202,20 +204,21 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(131, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(131, 17);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 17);
             // 
             // toolStripStatusLabel3
             // 
             this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(131, 17);
-            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(0, 17);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmIntegrated_chs
             // 
@@ -227,6 +230,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmIntegrated_chs";
             this.Text = "FrmIntegrated_chs";
+            this.Load += new System.EventHandler(this.FrmIntegrated_chs_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
@@ -260,5 +264,6 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.Timer timer1;
     }
 }
