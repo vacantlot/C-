@@ -69,7 +69,6 @@ namespace WinApp150604215
                 if (i == 7) break;
             }
             _Num[6] = random.Next(1, 17);
-
         }
        
         private void FrmDoubleColorBall_Load(object sender, EventArgs e)
