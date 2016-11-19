@@ -73,5 +73,27 @@ namespace WinApp150604215
                 this.txt1.Text = txt1.Text.Substring(0, txt1.Text.Length - 1); // 处理“、”  ——当选好又清空时，再选时会多出个“、” 
             }
         }
+
+        private void rdb_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (RadioButton RDB in this.groupBox1.Controls)
+            {
+                for (int i = 0; i < arr_chs.Length; i++)
+                {
+                    if (RDB.Checked && RDB.Text == arr_chs[i].ToString())
+                    {
+                        if (i > 3)
+                        {
+                            cmbYear.SelectedIndex = 68 + i;
+                        }
+                        else
+                        {
+                            cmbYear.SelectedIndex = 80 + i;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }

@@ -116,6 +116,7 @@
             this.rdb12.TabStop = true;
             this.rdb12.Text = "猪";
             this.rdb12.UseVisualStyleBackColor = true;
+            this.rdb12.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb11
             // 
@@ -127,6 +128,7 @@
             this.rdb11.TabStop = true;
             this.rdb11.Text = "猴";
             this.rdb11.UseVisualStyleBackColor = true;
+            this.rdb11.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb10
             // 
@@ -138,6 +140,7 @@
             this.rdb10.TabStop = true;
             this.rdb10.Text = "蛇";
             this.rdb10.UseVisualStyleBackColor = true;
+            this.rdb10.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb9
             // 
@@ -149,6 +152,7 @@
             this.rdb9.TabStop = true;
             this.rdb9.Text = "虎";
             this.rdb9.UseVisualStyleBackColor = true;
+            this.rdb9.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb8
             // 
@@ -160,6 +164,7 @@
             this.rdb8.TabStop = true;
             this.rdb8.Text = "狗";
             this.rdb8.UseVisualStyleBackColor = true;
+            this.rdb8.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb7
             // 
@@ -171,6 +176,7 @@
             this.rdb7.TabStop = true;
             this.rdb7.Text = "羊";
             this.rdb7.UseVisualStyleBackColor = true;
+            this.rdb7.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb6
             // 
@@ -182,6 +188,7 @@
             this.rdb6.TabStop = true;
             this.rdb6.Text = "龙";
             this.rdb6.UseVisualStyleBackColor = true;
+            this.rdb6.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb5
             // 
@@ -193,6 +200,7 @@
             this.rdb5.TabStop = true;
             this.rdb5.Text = "牛";
             this.rdb5.UseVisualStyleBackColor = true;
+            this.rdb5.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb4
             // 
@@ -204,6 +212,7 @@
             this.rdb4.TabStop = true;
             this.rdb4.Text = "鸡";
             this.rdb4.UseVisualStyleBackColor = true;
+            this.rdb4.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb3
             // 
@@ -215,6 +224,7 @@
             this.rdb3.TabStop = true;
             this.rdb3.Text = "马";
             this.rdb3.UseVisualStyleBackColor = true;
+            this.rdb3.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb2
             // 
@@ -226,6 +236,7 @@
             this.rdb2.TabStop = true;
             this.rdb2.Text = "兔";
             this.rdb2.UseVisualStyleBackColor = true;
+            this.rdb2.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // rdb1
             // 
@@ -237,6 +248,7 @@
             this.rdb1.TabStop = true;
             this.rdb1.Text = "鼠";
             this.rdb1.UseVisualStyleBackColor = true;
+            this.rdb1.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
             // 
             // label1
             // 
