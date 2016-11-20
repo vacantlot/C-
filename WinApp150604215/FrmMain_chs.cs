@@ -55,7 +55,7 @@ namespace WinApp150604215
 
         private void ShiYan_chs3_4_Click(object sender, EventArgs e)
         {
-            FrmMouseMove_chs frmmousemove = new FrmMouseMove_chs();
+            FrmMouse_chs frmmousemove = new FrmMouse_chs();
             frmmousemove.Show();
         }
 

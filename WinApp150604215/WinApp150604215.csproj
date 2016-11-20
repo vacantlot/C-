@@ -80,11 +80,11 @@
     <Compile Include="FrmStart_chs.Designer.cs">
       <DependentUpon>FrmStart_chs.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMouseMove_chs.cs">
+    <Compile Include="FrmMouse_chs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMouseMove_chs.Designer.cs">
-      <DependentUpon>FrmMouseMove_chs.cs</DependentUpon>
+    <Compile Include="FrmMouse_chs.Designer.cs">
+      <DependentUpon>FrmMouse_chs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSX_chs.cs">
       <SubType>Form</SubType>
@@ -118,8 +118,8 @@
     <EmbeddedResource Include="FrmStart_chs.resx">
       <DependentUpon>FrmStart_chs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMouseMove_chs.resx">
-      <DependentUpon>FrmMouseMove_chs.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMouse_chs.resx">
+      <DependentUpon>FrmMouse_chs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSX_chs.resx">
       <DependentUpon>FrmSX_chs.cs</DependentUpon>
