@@ -38,8 +38,7 @@ namespace WinApp150604215
             if (location == 1)
             {
                 label1.Visible = false;
-                label3.Visible = true;
-                
+                label3.Visible = true;               
             }
             else
             {
