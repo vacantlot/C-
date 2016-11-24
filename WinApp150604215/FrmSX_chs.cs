@@ -22,8 +22,8 @@ namespace WinApp150604215
 
         private void FrmSX_chs_Load(object sender, EventArgs e)
         {
-            //int temp = 1936;
-            for (int i = 1936; i <= 2046; i++)
+            
+            for (int i = DateTime.Now.Year - 80 ; i <= DateTime.Now.Year + 30; i++)
             {
                 arrlist.Add(i.ToString());    
             }
@@ -34,21 +34,15 @@ namespace WinApp150604215
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             char SX = arr_chs[(cmbYear.SelectedIndex+4) % 12];
-            if (rdb1.Text == SX.ToString()) rdb1.Checked = true;
-            if (rdb2.Text == SX.ToString()) rdb2.Checked = true;
-            if (rdb3.Text == SX.ToString()) rdb3.Checked = true;
-            if (rdb4.Text == SX.ToString()) rdb4.Checked = true;
-            if (rdb5.Text == SX.ToString()) rdb5.Checked = true;
-            if (rdb6.Text == SX.ToString()) rdb6.Checked = true;
-            if (rdb7.Text == SX.ToString()) rdb7.Checked = true;
-            if (rdb8.Text == SX.ToString()) rdb8.Checked = true;
-            if (rdb9.Text == SX.ToString()) rdb9.Checked = true;
-            if (rdb10.Text == SX.ToString()) rdb10.Checked = true;
-            if (rdb11.Text == SX.ToString()) rdb11.Checked = true;
-            if (rdb12.Text == SX.ToString()) rdb12.Checked = true;
+            foreach (RadioButton RDB in gbSX.Controls)
+            {
+                if (RDB.Text == SX.ToString())
+                {
+                    RDB.CheckedChanged -= rdb_CheckedChanged;
+                    RDB.Checked = true;
+                }
+            }
         }
-       
-
         private void txt1_TextChanged(object sender, EventArgs e)
         {
             txt1.Refresh();
@@ -57,7 +51,7 @@ namespace WinApp150604215
         private void ckb_CheckedChanged(object sender, EventArgs e)
         {
             txt1.Text = "";
-            foreach (CheckBox CKB in this.groupBox2.Controls)
+            foreach (CheckBox CKB in this.gbAH.Controls)
             {
                 if (CKB.Checked)
                 {
@@ -76,24 +70,24 @@ namespace WinApp150604215
 
         private void rdb_CheckedChanged(object sender, EventArgs e)
         {
-            foreach (RadioButton RDB in this.groupBox1.Controls)
+            foreach (RadioButton RDB in this.gbSX.Controls)
             {
-                for (int i = 0; i < arr_chs.Length; i++)
+                for (int i = 0 ; i < arr_chs.Length ; i++)
                 {
                     if (RDB.Checked && RDB.Text == arr_chs[i].ToString())
                     {
                         if (i > 3)
-                        {
                             cmbYear.SelectedIndex = 68 + i;
-                        }
                         else
-                        {
-                            cmbYear.SelectedIndex = 80 + i;
-                        }
+                            cmbYear.SelectedIndex = 80 + i;                       
                     }
                 }
             }
+        }
 
+        private void rdb_MouseDown(object sender, MouseEventArgs e)
+        {          
+          ((RadioButton)sender).CheckedChanged += rdb_CheckedChanged;          
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbSX = new System.Windows.Forms.GroupBox();
             this.rdb12 = new System.Windows.Forms.RadioButton();
             this.rdb11 = new System.Windows.Forms.RadioButton();
             this.rdb10 = new System.Windows.Forms.RadioButton();
@@ -48,7 +48,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.lab2 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbAH = new System.Windows.Forms.GroupBox();
             this.ckB6 = new System.Windows.Forms.CheckBox();
             this.ckB5 = new System.Windows.Forms.CheckBox();
             this.ckB4 = new System.Windows.Forms.CheckBox();
@@ -57,9 +57,9 @@
             this.ckb1 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbSX.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbAH.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -74,7 +74,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.gbSX);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.cmbYear);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -85,26 +85,26 @@
             this.tabPage1.Text = "生肖";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gbSX
             // 
-            this.groupBox1.Controls.Add(this.rdb12);
-            this.groupBox1.Controls.Add(this.rdb11);
-            this.groupBox1.Controls.Add(this.rdb10);
-            this.groupBox1.Controls.Add(this.rdb9);
-            this.groupBox1.Controls.Add(this.rdb8);
-            this.groupBox1.Controls.Add(this.rdb7);
-            this.groupBox1.Controls.Add(this.rdb6);
-            this.groupBox1.Controls.Add(this.rdb5);
-            this.groupBox1.Controls.Add(this.rdb4);
-            this.groupBox1.Controls.Add(this.rdb3);
-            this.groupBox1.Controls.Add(this.rdb2);
-            this.groupBox1.Controls.Add(this.rdb1);
-            this.groupBox1.Location = new System.Drawing.Point(25, 80);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(246, 159);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "生肖";
+            this.gbSX.Controls.Add(this.rdb12);
+            this.gbSX.Controls.Add(this.rdb11);
+            this.gbSX.Controls.Add(this.rdb10);
+            this.gbSX.Controls.Add(this.rdb9);
+            this.gbSX.Controls.Add(this.rdb8);
+            this.gbSX.Controls.Add(this.rdb7);
+            this.gbSX.Controls.Add(this.rdb6);
+            this.gbSX.Controls.Add(this.rdb5);
+            this.gbSX.Controls.Add(this.rdb4);
+            this.gbSX.Controls.Add(this.rdb3);
+            this.gbSX.Controls.Add(this.rdb2);
+            this.gbSX.Controls.Add(this.rdb1);
+            this.gbSX.Location = new System.Drawing.Point(25, 80);
+            this.gbSX.Name = "gbSX";
+            this.gbSX.Size = new System.Drawing.Size(246, 159);
+            this.gbSX.TabIndex = 2;
+            this.gbSX.TabStop = false;
+            this.gbSX.Text = "生肖";
             // 
             // rdb12
             // 
@@ -117,6 +117,7 @@
             this.rdb12.Text = "猪";
             this.rdb12.UseVisualStyleBackColor = true;
             this.rdb12.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb11
             // 
@@ -129,6 +130,7 @@
             this.rdb11.Text = "猴";
             this.rdb11.UseVisualStyleBackColor = true;
             this.rdb11.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb10
             // 
@@ -141,6 +143,7 @@
             this.rdb10.Text = "蛇";
             this.rdb10.UseVisualStyleBackColor = true;
             this.rdb10.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb9
             // 
@@ -153,6 +156,7 @@
             this.rdb9.Text = "虎";
             this.rdb9.UseVisualStyleBackColor = true;
             this.rdb9.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb8
             // 
@@ -165,6 +169,7 @@
             this.rdb8.Text = "狗";
             this.rdb8.UseVisualStyleBackColor = true;
             this.rdb8.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb7
             // 
@@ -177,6 +182,7 @@
             this.rdb7.Text = "羊";
             this.rdb7.UseVisualStyleBackColor = true;
             this.rdb7.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb6
             // 
@@ -189,6 +195,7 @@
             this.rdb6.Text = "龙";
             this.rdb6.UseVisualStyleBackColor = true;
             this.rdb6.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb5
             // 
@@ -201,6 +208,7 @@
             this.rdb5.Text = "牛";
             this.rdb5.UseVisualStyleBackColor = true;
             this.rdb5.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb4
             // 
@@ -213,6 +221,7 @@
             this.rdb4.Text = "鸡";
             this.rdb4.UseVisualStyleBackColor = true;
             this.rdb4.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb3
             // 
@@ -225,6 +234,7 @@
             this.rdb3.Text = "马";
             this.rdb3.UseVisualStyleBackColor = true;
             this.rdb3.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb2
             // 
@@ -237,6 +247,7 @@
             this.rdb2.Text = "兔";
             this.rdb2.UseVisualStyleBackColor = true;
             this.rdb2.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // rdb1
             // 
@@ -249,6 +260,7 @@
             this.rdb1.Text = "鼠";
             this.rdb1.UseVisualStyleBackColor = true;
             this.rdb1.CheckedChanged += new System.EventHandler(this.rdb_CheckedChanged);
+            this.rdb1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rdb_MouseDown);
             // 
             // label1
             // 
@@ -273,7 +285,7 @@
             // 
             this.tabPage2.Controls.Add(this.txt1);
             this.tabPage2.Controls.Add(this.lab2);
-            this.tabPage2.Controls.Add(this.groupBox2);
+            this.tabPage2.Controls.Add(this.gbAH);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -300,20 +312,20 @@
             this.lab2.TabIndex = 1;
             this.lab2.Text = "你选择的爱好有：";
             // 
-            // groupBox2
+            // gbAH
             // 
-            this.groupBox2.Controls.Add(this.ckB6);
-            this.groupBox2.Controls.Add(this.ckB5);
-            this.groupBox2.Controls.Add(this.ckB4);
-            this.groupBox2.Controls.Add(this.ckB3);
-            this.groupBox2.Controls.Add(this.ckB2);
-            this.groupBox2.Controls.Add(this.ckb1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 17);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(283, 139);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "请选择爱好";
+            this.gbAH.Controls.Add(this.ckB6);
+            this.gbAH.Controls.Add(this.ckB5);
+            this.gbAH.Controls.Add(this.ckB4);
+            this.gbAH.Controls.Add(this.ckB3);
+            this.gbAH.Controls.Add(this.ckB2);
+            this.gbAH.Controls.Add(this.ckb1);
+            this.gbAH.Location = new System.Drawing.Point(6, 17);
+            this.gbAH.Name = "gbAH";
+            this.gbAH.Size = new System.Drawing.Size(283, 139);
+            this.gbAH.TabIndex = 0;
+            this.gbAH.TabStop = false;
+            this.gbAH.Text = "请选择爱好";
             // 
             // ckB6
             // 
@@ -396,12 +408,12 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbSX.ResumeLayout(false);
+            this.gbSX.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbAH.ResumeLayout(false);
+            this.gbAH.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -411,7 +423,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbSX;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbYear;
         private System.Windows.Forms.RadioButton rdb8;
@@ -426,7 +438,7 @@
         private System.Windows.Forms.RadioButton rdb11;
         private System.Windows.Forms.RadioButton rdb10;
         private System.Windows.Forms.RadioButton rdb9;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbAH;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.Label lab2;
         private System.Windows.Forms.CheckBox ckb1;

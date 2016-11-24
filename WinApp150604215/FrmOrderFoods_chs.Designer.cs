@@ -30,12 +30,12 @@
         {
             this.lab1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lb_Meun = new System.Windows.Forms.ListBox();
-            this.lb_OrderedMeun = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.lsb_Meun = new System.Windows.Forms.ListBox();
+            this.lsb_OrderedMeun = new System.Windows.Forms.ListBox();
+            this.bt_AddSeleted = new System.Windows.Forms.Button();
+            this.bt_AddAllSeleted = new System.Windows.Forms.Button();
+            this.bt_cancelSeleted = new System.Windows.Forms.Button();
+            this.bt_cancelAllSeleted = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lab1
@@ -56,81 +56,81 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "选择的菜";
             // 
-            // lb_Meun
+            // lsb_Meun
             // 
-            this.lb_Meun.ColumnWidth = 10;
-            this.lb_Meun.FormattingEnabled = true;
-            this.lb_Meun.ItemHeight = 12;
-            this.lb_Meun.Location = new System.Drawing.Point(12, 83);
-            this.lb_Meun.Name = "lb_Meun";
-            this.lb_Meun.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lb_Meun.Size = new System.Drawing.Size(146, 256);
-            this.lb_Meun.Sorted = true;
-            this.lb_Meun.TabIndex = 2;
-            this.lb_Meun.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_Meun_MouseMove);
+            this.lsb_Meun.ColumnWidth = 10;
+            this.lsb_Meun.FormattingEnabled = true;
+            this.lsb_Meun.ItemHeight = 12;
+            this.lsb_Meun.Location = new System.Drawing.Point(12, 83);
+            this.lsb_Meun.Name = "lsb_Meun";
+            this.lsb_Meun.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.lsb_Meun.Size = new System.Drawing.Size(146, 256);
+            this.lsb_Meun.Sorted = true;
+            this.lsb_Meun.TabIndex = 2;
+            this.lsb_Meun.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_Meun_MouseMove);
             // 
-            // lb_OrderedMeun
+            // lsb_OrderedMeun
             // 
-            this.lb_OrderedMeun.FormattingEnabled = true;
-            this.lb_OrderedMeun.ItemHeight = 12;
-            this.lb_OrderedMeun.Location = new System.Drawing.Point(287, 83);
-            this.lb_OrderedMeun.Name = "lb_OrderedMeun";
-            this.lb_OrderedMeun.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lb_OrderedMeun.Size = new System.Drawing.Size(146, 256);
-            this.lb_OrderedMeun.Sorted = true;
-            this.lb_OrderedMeun.TabIndex = 3;
+            this.lsb_OrderedMeun.FormattingEnabled = true;
+            this.lsb_OrderedMeun.ItemHeight = 12;
+            this.lsb_OrderedMeun.Location = new System.Drawing.Point(287, 83);
+            this.lsb_OrderedMeun.Name = "lsb_OrderedMeun";
+            this.lsb_OrderedMeun.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lsb_OrderedMeun.Size = new System.Drawing.Size(146, 256);
+            this.lsb_OrderedMeun.Sorted = true;
+            this.lsb_OrderedMeun.TabIndex = 3;
             // 
-            // button1
+            // bt_AddSeleted
             // 
-            this.button1.Location = new System.Drawing.Point(185, 110);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "添加选择";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt_AddSeleted.Location = new System.Drawing.Point(185, 110);
+            this.bt_AddSeleted.Name = "bt_AddSeleted";
+            this.bt_AddSeleted.Size = new System.Drawing.Size(75, 23);
+            this.bt_AddSeleted.TabIndex = 4;
+            this.bt_AddSeleted.Text = "添加选择";
+            this.bt_AddSeleted.UseVisualStyleBackColor = true;
+            this.bt_AddSeleted.Click += new System.EventHandler(this.bt_AddSeleted_Click);
             // 
-            // button2
+            // bt_AddAllSeleted
             // 
-            this.button2.Location = new System.Drawing.Point(185, 157);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "添加所有";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bt_AddAllSeleted.Location = new System.Drawing.Point(185, 157);
+            this.bt_AddAllSeleted.Name = "bt_AddAllSeleted";
+            this.bt_AddAllSeleted.Size = new System.Drawing.Size(75, 23);
+            this.bt_AddAllSeleted.TabIndex = 5;
+            this.bt_AddAllSeleted.Text = "添加所有";
+            this.bt_AddAllSeleted.UseVisualStyleBackColor = true;
+            this.bt_AddAllSeleted.Click += new System.EventHandler(this.bt_AddAllSeleted_Click);
             // 
-            // button3
+            // bt_cancelSeleted
             // 
-            this.button3.Location = new System.Drawing.Point(185, 252);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "取消选择";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bt_cancelSeleted.Location = new System.Drawing.Point(185, 252);
+            this.bt_cancelSeleted.Name = "bt_cancelSeleted";
+            this.bt_cancelSeleted.Size = new System.Drawing.Size(75, 23);
+            this.bt_cancelSeleted.TabIndex = 6;
+            this.bt_cancelSeleted.Text = "取消选择";
+            this.bt_cancelSeleted.UseVisualStyleBackColor = true;
+            this.bt_cancelSeleted.Click += new System.EventHandler(this.bt_cancelSeleted_Click);
             // 
-            // button4
+            // bt_cancelAllSeleted
             // 
-            this.button4.Location = new System.Drawing.Point(185, 298);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "取消所有";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.bt_cancelAllSeleted.Location = new System.Drawing.Point(185, 298);
+            this.bt_cancelAllSeleted.Name = "bt_cancelAllSeleted";
+            this.bt_cancelAllSeleted.Size = new System.Drawing.Size(75, 23);
+            this.bt_cancelAllSeleted.TabIndex = 7;
+            this.bt_cancelAllSeleted.Text = "取消所有";
+            this.bt_cancelAllSeleted.UseVisualStyleBackColor = true;
+            this.bt_cancelAllSeleted.Click += new System.EventHandler(this.bt_cancelAllSeleted_Click);
             // 
             // FrmOrderFoods_chs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(445, 390);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lb_OrderedMeun);
-            this.Controls.Add(this.lb_Meun);
+            this.Controls.Add(this.bt_cancelAllSeleted);
+            this.Controls.Add(this.bt_cancelSeleted);
+            this.Controls.Add(this.bt_AddAllSeleted);
+            this.Controls.Add(this.bt_AddSeleted);
+            this.Controls.Add(this.lsb_OrderedMeun);
+            this.Controls.Add(this.lsb_Meun);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lab1);
             this.Name = "FrmOrderFoods_chs";
@@ -145,11 +145,11 @@
 
         private System.Windows.Forms.Label lab1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lb_Meun;
-        private System.Windows.Forms.ListBox lb_OrderedMeun;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ListBox lsb_Meun;
+        private System.Windows.Forms.ListBox lsb_OrderedMeun;
+        private System.Windows.Forms.Button bt_AddSeleted;
+        private System.Windows.Forms.Button bt_AddAllSeleted;
+        private System.Windows.Forms.Button bt_cancelSeleted;
+        private System.Windows.Forms.Button bt_cancelAllSeleted;
     }
 }
