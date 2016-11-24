@@ -52,7 +52,7 @@ namespace WinApp150604215
             {
                 MessageBox.Show("登录成功！");
                 this.Close();
-                frmMain.showShiYanOrder();             
+                frmMain.showShiYanOrder();   
             }
 
 

@@ -3,11 +3,11 @@ using System.Windows.Forms;
 
 namespace WinApp150604215
 {
-    public partial class FrmMouseMove_chs : Form
+    public partial class FrmMouse_chs : Form
     {
         private int location;
         Random ra = new Random();
-        public FrmMouseMove_chs()
+        public FrmMouse_chs()
         {
             InitializeComponent();
         }
@@ -38,8 +38,7 @@ namespace WinApp150604215
             if (location == 1)
             {
                 label1.Visible = false;
-                label3.Visible = true;
-                
+                label3.Visible = true;               
             }
             else
             {
@@ -47,7 +46,7 @@ namespace WinApp150604215
                     ra.Next(0,ClientRectangle.Width - label1.Width),
                     ra.Next(0,ClientRectangle.Height - label1.Height),
                     label1.Width ,
-                    label1.Height);                
+                   label1.Height);                
             }
         }
 

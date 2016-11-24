@@ -2,7 +2,7 @@
 
 namespace WinApp150604215
 {
-    partial class FrmMouseMove_chs
+    partial class FrmMouse_chs
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace WinApp150604215
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMouseMove_chs));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMouse_chs));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
