@@ -184,8 +184,9 @@ namespace WinApp150604215
         {
             colorDialog1.ShowDialog();
             lsv.BackColor = colorDialog1.Color;
+            OptLog(lsv, "修改ListView背景颜色！", DateTime.Now.ToString());
         }
-        
+
         private void bt_deleteLog_Click(object sender, EventArgs e)
         {
             for (int i = lsv.SelectedItems.Count ; i > 0; i--)
@@ -197,6 +198,7 @@ namespace WinApp150604215
         private void bt_clearAllLog_Click(object sender, EventArgs e)
         {
             lsv.Items.Clear();
+            OptLog(lsv, "清空了日志", DateTime.Now.ToString());
         }
 
         private void 重新加载ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -218,6 +220,7 @@ namespace WinApp150604215
         {
             fontDialog1.ShowDialog();
             lsv.Font = fontDialog1.Font;
+            OptLog(lsv, "修改ListView字体！", DateTime.Now.ToString());
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
