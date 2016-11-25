@@ -123,22 +123,23 @@
             // ShiYan4_1
             // 
             this.ShiYan4_1.Name = "ShiYan4_1";
-            this.ShiYan4_1.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_1.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_1.Text = "生肖爱好";
             this.ShiYan4_1.Click += new System.EventHandler(this.TSMSYAH_Click);
             // 
             // ShiYan4_2
             // 
             this.ShiYan4_2.Name = "ShiYan4_2";
-            this.ShiYan4_2.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_2.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_2.Text = "电子菜单";
             this.ShiYan4_2.Click += new System.EventHandler(this.TlSMMeun_Click);
             // 
             // ShiYan4_3
             // 
             this.ShiYan4_3.Name = "ShiYan4_3";
-            this.ShiYan4_3.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_3.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_3.Text = "多控件应用";
+            this.ShiYan4_3.Click += new System.EventHandler(this.ShiYan4_3_Click);
             // 
             // FrmMain_chs
             // 

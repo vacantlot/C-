@@ -56,6 +56,7 @@ namespace WinApp150604215
         private void ShiYan_chs3_4_Click(object sender, EventArgs e)
         {
             FrmMouse_chs frmmousemove = new FrmMouse_chs();
+            frmmousemove.MdiParent = this;
             frmmousemove.Show();
         }
 
@@ -81,6 +82,13 @@ namespace WinApp150604215
             FrmOrderFoods_chs frmfoods = new FrmOrderFoods_chs();
             frmfoods.MdiParent = this;
             frmfoods.Show();
+        }
+
+        private void ShiYan4_3_Click(object sender, EventArgs e)
+        {
+            FrmIntegrated_chs frmIntegrated = new FrmIntegrated_chs();
+            frmIntegrated.MdiParent = this;
+            frmIntegrated.Show();
         }
     }
 }

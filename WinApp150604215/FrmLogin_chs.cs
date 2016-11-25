@@ -49,8 +49,7 @@ namespace WinApp150604215
             }
 
             if (TxtName.Text == "f" && TxtPassWord.Text == "f")
-            {
-                MessageBox.Show("登录成功！");
+            {               
                 this.Close();
                 frmMain.showShiYanOrder();   
             }
