@@ -38,7 +38,7 @@ namespace WinApp150604215
             {
                 if (RDB.Text == SX.ToString())
                 {
-                    RDB.CheckedChanged -= rdb_CheckedChanged;
+                    RDB.CheckedChanged -= rdb_CheckedChanged;       //取消RadioButton的事件订阅，防止选定年份的后年龄再“乱跳”
                     RDB.Checked = true;
                 }
             }
@@ -87,7 +87,7 @@ namespace WinApp150604215
 
         private void rdb_MouseDown(object sender, MouseEventArgs e)
         {          
-          ((RadioButton)sender).CheckedChanged += rdb_CheckedChanged;          
+          ((RadioButton)sender).CheckedChanged += rdb_CheckedChanged;          //当点击了RadioButton后订阅RadioButton的CheckedChanged事件
         }
     }
 }

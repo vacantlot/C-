@@ -32,7 +32,7 @@ namespace WinApp150604215
             if (AIndex < 0) return;
             itemName = ((ListBox)sender).Items[AIndex].ToString();
            // FrmShowPicture frmpicture =new FrmShowPicture(this);     
-            new FrmShowPicture(this).Show();                                               
+            new FrmShowPicture(this).Show();                          //新建一个窗体用于显示菜品                     
         }
 
         private void bt_AddSeleted_Click(object sender, EventArgs e)
