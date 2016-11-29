@@ -12,7 +12,7 @@ namespace WinApp150604215
 
         private void tsmiYl3_2_Click(object sender, EventArgs e)
         {
-            FrmLogin_chs frmlogin = new FrmLogin_chs(this);
+            FrmLoginFile_chs frmlogin = new FrmLoginFile_chs(this);
             frmlogin.MdiParent = this;
             frmlogin.Show();
         }
@@ -29,7 +29,7 @@ namespace WinApp150604215
             ShiYan4_1.Enabled = false;
             ShiYan4_2.Enabled = false;
             ShiYan4_3.Enabled = false;
-            var frmlogin = new FrmLogin_chs(this);
+            var frmlogin = new FrmLoginFile_chs(this);
             frmlogin.MdiParent = this;                       
             frmlogin.Show();
         }

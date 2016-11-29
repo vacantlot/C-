@@ -62,10 +62,16 @@
     <Compile Include="FrmIntegrated_chs.Designer.cs">
       <DependentUpon>FrmIntegrated_chs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLoginFile_chs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginFile_chs.Designer.cs">
+      <DependentUpon>FrmLoginFile_chs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin_chs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLogin_chs.Designer.cs">
+    <Compile Include="FrmLogin_chs.designer.cs">
       <DependentUpon>FrmLogin_chs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain_chs.cs">
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIntegrated_chs.resx">
       <DependentUpon>FrmIntegrated_chs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginFile_chs.resx">
+      <DependentUpon>FrmLoginFile_chs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin_chs.resx">
       <DependentUpon>FrmLogin_chs.cs</DependentUpon>
