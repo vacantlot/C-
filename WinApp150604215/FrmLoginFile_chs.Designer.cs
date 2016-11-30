@@ -34,6 +34,7 @@
             this.TxtPassWord = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userNameLaber
@@ -59,7 +60,7 @@
             // TxtName
             // 
             this.TxtName.Location = new System.Drawing.Point(110, 37);
-            this.TxtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(2);
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(68, 21);
             this.TxtName.TabIndex = 2;
@@ -67,7 +68,7 @@
             // TxtPassWord
             // 
             this.TxtPassWord.Location = new System.Drawing.Point(110, 77);
-            this.TxtPassWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtPassWord.Margin = new System.Windows.Forms.Padding(2);
             this.TxtPassWord.Name = "TxtPassWord";
             this.TxtPassWord.PasswordChar = '*';
             this.TxtPassWord.Size = new System.Drawing.Size(68, 21);
@@ -77,7 +78,7 @@
             // 
             this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(35, 146);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(54, 22);
             this.button1.TabIndex = 4;
@@ -90,7 +91,7 @@
             this.button2.AutoSize = true;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Location = new System.Drawing.Point(123, 146);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(54, 22);
             this.button2.TabIndex = 5;
@@ -98,24 +99,34 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // FrmLogin_chs
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 191);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 12);
+            this.label1.TabIndex = 6;
+            // 
+            // FrmLoginFile_chs
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(214, 194);
+            this.ClientSize = new System.Drawing.Size(214, 227);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPassWord);
             this.Controls.Add(this.TxtName);
             this.Controls.Add(this.passWordLabel);
             this.Controls.Add(this.userNameLaber);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FrmLogin_chs";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FrmLoginFile_chs";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
+            this.Load += new System.EventHandler(this.FrmLoginFile_chs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +140,6 @@
         private System.Windows.Forms.TextBox TxtPassWord;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
     }
 }

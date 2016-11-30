@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WinApp150604215
 {
@@ -41,6 +42,13 @@ namespace WinApp150604215
             {
                 startORstopbutton.Text = "停止";
                 timer1.Enabled = true;
+                using (StreamWriter sWriter = new StreamWriter("DoubleColorBall.txt", true))
+                {
+                    foreach (int i in Num)
+                        sWriter.Write(i + "\t");
+                    sWriter.Close();
+                }
+                
             }
             else if (startORstopbutton.Text == "停止")
             {
@@ -74,7 +82,27 @@ namespace WinApp150604215
         private void FrmDoubleColorBall_Load(object sender, EventArgs e)
         {
             timer1 = new Timer();
-            timer1.Tick += timer1_Tick;        
+            timer1.Tick += timer1_Tick;
+            if (!File.Exists("DoubleColorBall.txt"))
+            {
+                File.Create("DoubleColorBall.txt");
+            }
+            using(StreamReader sReader = new StreamReader("DoubleColorBall.txt" , true))
+            {
+                string[] str;
+                
+               if ((str = sReader.ReadLine().Split('\t')) != null)
+               {
+                    RedBall1.Text = str[0];
+                    RedBall2.Text = str[1];
+                    RedBall3.Text = str[2];
+                    RedBall4.Text = str[3];
+                    RedBall5.Text = str[4];
+                    RedBall6.Text = str[5];
+                    BlueBall1.Text = str[6];
+                }
+                sReader.Close();
+            }      
         }
     }
 }

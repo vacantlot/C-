@@ -16,7 +16,7 @@ namespace WinApp150604215
             timer1.Interval = 1000;
             timer1.Start();
             OptLog(lsv,"启动程序",DateTime.Now.ToString());
-            toolStripLabel1.Text = "Windows应用程序";
+            toolStripLabel1.Text = "Windows应用程序";        
         }
 
         private void OptLog(ListView lv , string optStr , string OptTime)
@@ -204,6 +204,7 @@ namespace WinApp150604215
         private void 重新加载ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             txtbo_AddCityName.Text = "";
+            pictureBox1.Visible = true;
             comboBox1.Items.Clear();
             lsv.Items.Clear();
             lstBox.Items.Clear();
@@ -247,6 +248,11 @@ namespace WinApp150604215
         private void toolStrip1_MouseMove(object sender, MouseEventArgs e)
         {
             toolStripLabel1.Text = "工具栏";
+        }
+
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
         }
     }
 }

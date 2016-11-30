@@ -40,6 +40,7 @@
             this.ShiYan4_1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan4_2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan4_3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.登录日志ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             // 
             this.系统SToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.重启ToolStripMenuItem,
+            this.登录日志ToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.系统SToolStripMenuItem.Name = "系统SToolStripMenuItem";
             this.系统SToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
@@ -68,14 +70,14 @@
             // 重启ToolStripMenuItem
             // 
             this.重启ToolStripMenuItem.Name = "重启ToolStripMenuItem";
-            this.重启ToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.重启ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.重启ToolStripMenuItem.Text = "重启&R";
             this.重启ToolStripMenuItem.Click += new System.EventHandler(this.重启ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
             this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.退出ToolStripMenuItem.Text = "退出";
             this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
@@ -123,23 +125,30 @@
             // ShiYan4_1
             // 
             this.ShiYan4_1.Name = "ShiYan4_1";
-            this.ShiYan4_1.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_1.Size = new System.Drawing.Size(136, 22);
             this.ShiYan4_1.Text = "生肖爱好";
             this.ShiYan4_1.Click += new System.EventHandler(this.TSMSYAH_Click);
             // 
             // ShiYan4_2
             // 
             this.ShiYan4_2.Name = "ShiYan4_2";
-            this.ShiYan4_2.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_2.Size = new System.Drawing.Size(136, 22);
             this.ShiYan4_2.Text = "电子菜单";
             this.ShiYan4_2.Click += new System.EventHandler(this.TlSMMeun_Click);
             // 
             // ShiYan4_3
             // 
             this.ShiYan4_3.Name = "ShiYan4_3";
-            this.ShiYan4_3.Size = new System.Drawing.Size(152, 22);
+            this.ShiYan4_3.Size = new System.Drawing.Size(136, 22);
             this.ShiYan4_3.Text = "多控件应用";
             this.ShiYan4_3.Click += new System.EventHandler(this.ShiYan4_3_Click);
+            // 
+            // 登录日志ToolStripMenuItem
+            // 
+            this.登录日志ToolStripMenuItem.Name = "登录日志ToolStripMenuItem";
+            this.登录日志ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.登录日志ToolStripMenuItem.Text = "登录日志";
+            this.登录日志ToolStripMenuItem.Click += new System.EventHandler(this.登录日志ToolStripMenuItem_Click);
             // 
             // FrmMain_chs
             // 
@@ -175,5 +184,6 @@
         private System.Windows.Forms.ToolStripMenuItem ShiYan4_1;
         private System.Windows.Forms.ToolStripMenuItem ShiYan4_2;
         private System.Windows.Forms.ToolStripMenuItem ShiYan4_3;
+        private System.Windows.Forms.ToolStripMenuItem 登录日志ToolStripMenuItem;
     }
 }

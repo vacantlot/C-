@@ -90,5 +90,12 @@ namespace WinApp150604215
             frmIntegrated.MdiParent = this;
             frmIntegrated.Show();
         }
+
+        private void 登录日志ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmShowLog frmshowlog = new FrmShowLog();
+            frmshowlog.MdiParent = this;
+            frmshowlog.Show();
+        }
     }
 }

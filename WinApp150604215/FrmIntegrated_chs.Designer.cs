@@ -84,11 +84,13 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox_recoveryANDhandle.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -320,6 +322,7 @@
             // 
             // groupBox_recoveryANDhandle
             // 
+            this.groupBox_recoveryANDhandle.Controls.Add(this.pictureBox1);
             this.groupBox_recoveryANDhandle.Controls.Add(this.bt_openLogFile);
             this.groupBox_recoveryANDhandle.Controls.Add(this.bt_loadLogFile);
             this.groupBox_recoveryANDhandle.Controls.Add(this.bt_Save);
@@ -573,6 +576,16 @@
             this.toolStripLabel3.Size = new System.Drawing.Size(97, 22);
             this.toolStripLabel3.Text = "...";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(412, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 143);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
+            // 
             // FrmIntegrated_chs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -605,6 +618,7 @@
             this.groupBox2.PerformLayout();
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -666,5 +680,6 @@
         private System.Windows.Forms.ColumnHeader ColumnHeader2;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
