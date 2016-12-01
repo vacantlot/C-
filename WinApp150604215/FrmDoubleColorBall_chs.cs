@@ -52,13 +52,12 @@ namespace WinApp150604215
                 using (StreamWriter sWriter = new StreamWriter("DoubleColorBall.txt", true))
                 {
                     foreach (int i in Num)
-                        sWriter.Write(i + "\t");
+                        sWriter.Write(i.ToString("00") + "\t");
                     sWriter.WriteLine();
                     sWriter.Close();
                 }
             }
         }
-
         private void DoubleColorBall(int[] _Num)
         {
             Random random = new Random();
@@ -87,19 +86,17 @@ namespace WinApp150604215
             timer1.Tick += timer1_Tick;
             try
             {
-
                 if (!File.Exists("DoubleColorBall.txt"))
                 {
-                    File.Create("DoubleColorBall.txt");
+                    File.Create("DoubleColorBall.txt").Close();
                 }
                 using (StreamReader sReader = new StreamReader("DoubleColorBall.txt", true))
                 {
                     string str1;
-
                     if ((str1 = sReader.ReadLine()) != null)
                     {
                         string[] allLines = System.IO.File.ReadAllLines("DoubleColorBall.txt");
-                        string[] str2 = (allLines[allLines.Length - 1]).Split('\t');
+                        string[] str2 = (allLines[allLines.Length - 1]).Split('\t');                   //按行读出所有的文本，取最后一行
                         RedBall1.Text = str2[0];
                         RedBall2.Text = str2[1];
                         RedBall3.Text = str2[2];
@@ -110,7 +107,6 @@ namespace WinApp150604215
                     }
                     sReader.Close();
                 }
-
             }
             catch (IOException ex)
             {

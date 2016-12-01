@@ -7,7 +7,6 @@ namespace WinApp150604215
 {
     public partial class FrmLoginFile_chs : Form
     {
-        ArrayList arrlist = new ArrayList();
         private FrmMain_chs frmMain;
         struct User
         {
@@ -75,7 +74,7 @@ namespace WinApp150604215
                         frmMain.showShiYanOrder();
                         if (!File.Exists("Log.txt"))
                         {
-                            File.Create("Log.txt");
+                            File.Create("Log.txt").Close();
                         }
                         string strLog = users[i].Name +"\t"+ DateTime.Now.ToString();
                         StreamWriter sWriter = new StreamWriter("Log.txt", true);                       
