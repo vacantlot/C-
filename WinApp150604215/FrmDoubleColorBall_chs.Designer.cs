@@ -48,7 +48,7 @@
             this.RedBall1.Multiline = true;
             this.RedBall1.Name = "RedBall1";
             this.RedBall1.Size = new System.Drawing.Size(60, 61);
-            this.RedBall1.TabIndex = 0;
+            
             this.RedBall1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RedBall2
@@ -59,7 +59,7 @@
             this.RedBall2.Multiline = true;
             this.RedBall2.Name = "RedBall2";
             this.RedBall2.Size = new System.Drawing.Size(60, 61);
-            this.RedBall2.TabIndex = 0;
+            
             this.RedBall2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RedBall3
@@ -70,7 +70,7 @@
             this.RedBall3.Multiline = true;
             this.RedBall3.Name = "RedBall3";
             this.RedBall3.Size = new System.Drawing.Size(60, 61);
-            this.RedBall3.TabIndex = 0;
+            
             this.RedBall3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RedBall4
@@ -81,7 +81,7 @@
             this.RedBall4.Multiline = true;
             this.RedBall4.Name = "RedBall4";
             this.RedBall4.Size = new System.Drawing.Size(60, 61);
-            this.RedBall4.TabIndex = 0;
+            
             this.RedBall4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RedBall5
@@ -92,7 +92,7 @@
             this.RedBall5.Multiline = true;
             this.RedBall5.Name = "RedBall5";
             this.RedBall5.Size = new System.Drawing.Size(60, 61);
-            this.RedBall5.TabIndex = 0;
+            
             this.RedBall5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RedBall6
@@ -103,7 +103,7 @@
             this.RedBall6.Multiline = true;
             this.RedBall6.Name = "RedBall6";
             this.RedBall6.Size = new System.Drawing.Size(60, 61);
-            this.RedBall6.TabIndex = 0;
+            
             this.RedBall6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BlueBall1
@@ -114,7 +114,7 @@
             this.BlueBall1.Multiline = true;
             this.BlueBall1.Name = "BlueBall1";
             this.BlueBall1.Size = new System.Drawing.Size(60, 61);
-            this.BlueBall1.TabIndex = 0;
+            
             this.BlueBall1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // startORstopbutton
