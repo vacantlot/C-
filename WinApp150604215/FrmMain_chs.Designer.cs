@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.系统SToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.重启ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.登录日志ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.检查一ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan_chs3_2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,7 +41,10 @@
             this.ShiYan4_1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan4_2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ShiYan4_3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.登录日志ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.实验5ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.登录文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.双色球文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.实验6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +54,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.系统SToolStripMenuItem,
             this.检查一ToolStripMenuItem,
-            this.实验4ToolStripMenuItem});
+            this.实验4ToolStripMenuItem,
+            this.实验5ToolStripMenuItem,
+            this.实验6ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(502, 25);
@@ -73,6 +79,13 @@
             this.重启ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.重启ToolStripMenuItem.Text = "重启&R";
             this.重启ToolStripMenuItem.Click += new System.EventHandler(this.重启ToolStripMenuItem_Click);
+            // 
+            // 登录日志ToolStripMenuItem
+            // 
+            this.登录日志ToolStripMenuItem.Name = "登录日志ToolStripMenuItem";
+            this.登录日志ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.登录日志ToolStripMenuItem.Text = "登录日志";
+            this.登录日志ToolStripMenuItem.Click += new System.EventHandler(this.登录日志ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
@@ -125,30 +138,52 @@
             // ShiYan4_1
             // 
             this.ShiYan4_1.Name = "ShiYan4_1";
-            this.ShiYan4_1.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_1.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_1.Text = "生肖爱好";
             this.ShiYan4_1.Click += new System.EventHandler(this.TSMSYAH_Click);
             // 
             // ShiYan4_2
             // 
             this.ShiYan4_2.Name = "ShiYan4_2";
-            this.ShiYan4_2.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_2.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_2.Text = "电子菜单";
             this.ShiYan4_2.Click += new System.EventHandler(this.TlSMMeun_Click);
             // 
             // ShiYan4_3
             // 
             this.ShiYan4_3.Name = "ShiYan4_3";
-            this.ShiYan4_3.Size = new System.Drawing.Size(136, 22);
+            this.ShiYan4_3.Size = new System.Drawing.Size(152, 22);
             this.ShiYan4_3.Text = "多控件应用";
             this.ShiYan4_3.Click += new System.EventHandler(this.ShiYan4_3_Click);
             // 
-            // 登录日志ToolStripMenuItem
+            // 实验5ToolStripMenuItem
             // 
-            this.登录日志ToolStripMenuItem.Name = "登录日志ToolStripMenuItem";
-            this.登录日志ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.登录日志ToolStripMenuItem.Text = "登录日志";
-            this.登录日志ToolStripMenuItem.Click += new System.EventHandler(this.登录日志ToolStripMenuItem_Click);
+            this.实验5ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.登录文件ToolStripMenuItem,
+            this.双色球文件ToolStripMenuItem});
+            this.实验5ToolStripMenuItem.Name = "实验5ToolStripMenuItem";
+            this.实验5ToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
+            this.实验5ToolStripMenuItem.Text = "实验5";
+            // 
+            // 登录文件ToolStripMenuItem
+            // 
+            this.登录文件ToolStripMenuItem.Name = "登录文件ToolStripMenuItem";
+            this.登录文件ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.登录文件ToolStripMenuItem.Text = "登录（文件）";
+            this.登录文件ToolStripMenuItem.Click += new System.EventHandler(this.登录文件ToolStripMenuItem_Click);
+            // 
+            // 双色球文件ToolStripMenuItem
+            // 
+            this.双色球文件ToolStripMenuItem.Name = "双色球文件ToolStripMenuItem";
+            this.双色球文件ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.双色球文件ToolStripMenuItem.Text = "双色球（文件）";
+            this.双色球文件ToolStripMenuItem.Click += new System.EventHandler(this.ShiYan_chs3_3_Click);
+            // 
+            // 实验6ToolStripMenuItem
+            // 
+            this.实验6ToolStripMenuItem.Name = "实验6ToolStripMenuItem";
+            this.实验6ToolStripMenuItem.Size = new System.Drawing.Size(51, 21);
+            this.实验6ToolStripMenuItem.Text = "实验6";
             // 
             // FrmMain_chs
             // 
@@ -185,5 +220,9 @@
         private System.Windows.Forms.ToolStripMenuItem ShiYan4_2;
         private System.Windows.Forms.ToolStripMenuItem ShiYan4_3;
         private System.Windows.Forms.ToolStripMenuItem 登录日志ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 实验5ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 登录文件ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 双色球文件ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 实验6ToolStripMenuItem;
     }
 }

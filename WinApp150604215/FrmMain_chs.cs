@@ -29,7 +29,7 @@ namespace WinApp150604215
             ShiYan4_1.Enabled = false;
             ShiYan4_2.Enabled = false;
             ShiYan4_3.Enabled = false;
-            var frmlogin = new FrmLoginFile_chs(this);
+            var frmlogin = new FrmLogin_chs(this);
             frmlogin.MdiParent = this;                       
             frmlogin.Show();
         }
@@ -96,6 +96,13 @@ namespace WinApp150604215
             FrmShowLog frmshowlog = new FrmShowLog();
             frmshowlog.MdiParent = this;
             frmshowlog.Show();
+        }
+
+        private void 登录文件ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLoginFile_chs frmlogFile = new FrmLoginFile_chs();
+            frmlogFile.MdiParent = this;
+            frmlogFile.Show();
         }
     }
 }

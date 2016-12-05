@@ -27,11 +27,20 @@ namespace WinApp150604215
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {     
-            FrmMain_chs frmMain = new FrmMain_chs();
-            Hide();
-            frmMain.Show();
+        {
             timer1.Enabled = false;
+            DataBase db = new DataBase();
+            if (db.ConIsOpen())
+            {
+                FrmMain_chs frmMain = new FrmMain_chs();
+                Hide();
+                frmMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("连接数据库失败！");
+                Application.Exit();
+            }
         }
     }
 }

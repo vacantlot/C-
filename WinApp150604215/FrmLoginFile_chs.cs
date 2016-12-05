@@ -70,8 +70,7 @@ namespace WinApp150604215
                         button1.Visible = false;
                         button2.Text = "注销";
                         TxtName.Clear();
-                        TxtPassWord.Clear();
-                        frmMain.showShiYanOrder();
+                        TxtPassWord.Clear();                        
                         if (!File.Exists("Log.txt"))
                         {
                             File.Create("Log.txt").Close();
@@ -79,8 +78,7 @@ namespace WinApp150604215
                         string strLog = users[i].Name +"\t"+ DateTime.Now.ToString();
                         StreamWriter sWriter = new StreamWriter("Log.txt", true);                       
                         sWriter.WriteLine(strLog);
-                        sWriter.Close();
-                        
+                        sWriter.Close();                       
                     }
                     i++;
                     if (i > 4)
