@@ -70,6 +70,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="WinApp150604215\WinApp150604215.csproj">
+      <Project>{B29FF34D-C3E2-476D-9970-9689F26A7996}</Project>
+      <Name>WinApp150604215</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

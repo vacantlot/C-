@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+
 namespace ConApp150604215
 {
 
@@ -295,8 +296,9 @@ namespace ConApp150604215
         static void Main(string[] args)
         {
 
-           // shiyan1();
-            shiyan2();
+            // shiyan1();
+            //  shiyan2();
+            
         }
     }
 }
