@@ -22,7 +22,7 @@ namespace WinApp150604215
         {
             if (!File.Exists("Log.txt"))
             {
-                File.Create("Log.txt");
+                File.Create("Log.txt").Close();
             }
             string strLine = string.Empty;
             using(StreamReader sReader = new StreamReader("Log.txt" , true))

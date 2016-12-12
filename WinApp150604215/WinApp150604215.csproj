@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -106,6 +107,12 @@
     </Compile>
     <Compile Include="FrmOrderFoods_chs.Designer.cs">
       <DependentUpon>FrmOrderFoods_chs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuery_chs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuery_chs.Designer.cs">
+      <DependentUpon>FrmQuery_chs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmShowLog.cs">
       <SubType>Form</SubType>
@@ -165,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOrderFoods_chs.resx">
       <DependentUpon>FrmOrderFoods_chs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuery_chs.resx">
+      <DependentUpon>FrmQuery_chs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmShowLog.resx">
       <DependentUpon>FrmShowLog.cs</DependentUpon>

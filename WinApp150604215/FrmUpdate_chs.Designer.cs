@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_xuehao = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_Picdialog = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.txt_major = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.rdB_girl = new System.Windows.Forms.RadioButton();
             this.rdB_boy = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_xuehao = new System.Windows.Forms.TextBox();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,20 +46,22 @@
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Mod = new System.Windows.Forms.Button();
             this.btn_Del = new System.Windows.Forms.Button();
-            this.btn_next = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_xuehao);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.btn_Picdialog);
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.txt_major);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.rdB_girl);
             this.groupBox1.Controls.Add(this.rdB_boy);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.txt_xuehao);
             this.groupBox1.Controls.Add(this.txt_name);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -68,18 +73,55 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "用户信息";
             // 
+            // txt_xuehao
+            // 
+            this.txt_xuehao.Location = new System.Drawing.Point(92, 73);
+            this.txt_xuehao.Name = "txt_xuehao";
+            this.txt_xuehao.ReadOnly = true;
+            this.txt_xuehao.Size = new System.Drawing.Size(100, 21);
+            this.txt_xuehao.TabIndex = 1;
+            this.txt_xuehao.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 76);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 12);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "学  号:";
+            // 
+            // btn_Picdialog
+            // 
+            this.btn_Picdialog.Location = new System.Drawing.Point(274, 166);
+            this.btn_Picdialog.Name = "btn_Picdialog";
+            this.btn_Picdialog.Size = new System.Drawing.Size(75, 23);
+            this.btn_Picdialog.TabIndex = 6;
+            this.btn_Picdialog.Text = "浏览图片";
+            this.btn_Picdialog.UseVisualStyleBackColor = true;
+            this.btn_Picdialog.Click += new System.EventHandler(this.btn_Picdialog_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(92, 33);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 20);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // txt_major
             // 
-            this.txt_major.Location = new System.Drawing.Point(92, 173);
+            this.txt_major.Location = new System.Drawing.Point(92, 195);
             this.txt_major.Name = "txt_major";
             this.txt_major.ReadOnly = true;
             this.txt_major.Size = new System.Drawing.Size(100, 21);
-            this.txt_major.TabIndex = 10;
+            this.txt_major.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 176);
+            this.label5.Location = new System.Drawing.Point(23, 198);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 9;
@@ -88,10 +130,10 @@
             // rdB_girl
             // 
             this.rdB_girl.AutoSize = true;
-            this.rdB_girl.Location = new System.Drawing.Point(157, 130);
+            this.rdB_girl.Location = new System.Drawing.Point(157, 162);
             this.rdB_girl.Name = "rdB_girl";
             this.rdB_girl.Size = new System.Drawing.Size(35, 16);
-            this.rdB_girl.TabIndex = 8;
+            this.rdB_girl.TabIndex = 4;
             this.rdB_girl.TabStop = true;
             this.rdB_girl.Text = "女";
             this.rdB_girl.UseVisualStyleBackColor = true;
@@ -99,10 +141,10 @@
             // rdB_boy
             // 
             this.rdB_boy.AutoSize = true;
-            this.rdB_boy.Location = new System.Drawing.Point(92, 130);
+            this.rdB_boy.Location = new System.Drawing.Point(92, 162);
             this.rdB_boy.Name = "rdB_boy";
             this.rdB_boy.Size = new System.Drawing.Size(35, 16);
-            this.rdB_boy.TabIndex = 7;
+            this.rdB_boy.TabIndex = 3;
             this.rdB_boy.TabStop = true;
             this.rdB_boy.Text = "男";
             this.rdB_boy.UseVisualStyleBackColor = true;
@@ -110,7 +152,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 130);
+            this.label4.Location = new System.Drawing.Point(23, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 12);
             this.label4.TabIndex = 6;
@@ -124,21 +166,13 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // txt_xuehao
-            // 
-            this.txt_xuehao.Location = new System.Drawing.Point(92, 77);
-            this.txt_xuehao.Name = "txt_xuehao";
-            this.txt_xuehao.ReadOnly = true;
-            this.txt_xuehao.Size = new System.Drawing.Size(100, 21);
-            this.txt_xuehao.TabIndex = 4;
-            // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(92, 33);
+            this.txt_name.Location = new System.Drawing.Point(92, 118);
             this.txt_name.Name = "txt_name";
             this.txt_name.ReadOnly = true;
             this.txt_name.Size = new System.Drawing.Size(100, 21);
-            this.txt_name.TabIndex = 3;
+            this.txt_name.TabIndex = 2;
             // 
             // label3
             // 
@@ -152,16 +186,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 80);
+            this.label2.Location = new System.Drawing.Point(32, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 12);
+            this.label2.Size = new System.Drawing.Size(23, 12);
             this.label2.TabIndex = 1;
-            this.label2.Text = "学  号:";
+            this.label2.Text = "ID:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 36);
+            this.label1.Location = new System.Drawing.Point(23, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 12);
             this.label1.TabIndex = 0;
@@ -175,6 +209,7 @@
             this.btn_Add.TabIndex = 1;
             this.btn_Add.Text = "增加";
             this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Mod
             // 
@@ -184,6 +219,7 @@
             this.btn_Mod.TabIndex = 2;
             this.btn_Mod.Text = "修改";
             this.btn_Mod.UseVisualStyleBackColor = true;
+            this.btn_Mod.Click += new System.EventHandler(this.btn_Mod_Click);
             // 
             // btn_Del
             // 
@@ -193,23 +229,13 @@
             this.btn_Del.TabIndex = 3;
             this.btn_Del.Text = "删除";
             this.btn_Del.UseVisualStyleBackColor = true;
-            // 
-            // btn_next
-            // 
-            this.btn_next.Location = new System.Drawing.Point(155, 274);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(75, 23);
-            this.btn_next.TabIndex = 4;
-            this.btn_next.Text = "下一条";
-            this.btn_next.UseVisualStyleBackColor = true;
-            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
+            this.btn_Del.Click += new System.EventHandler(this.btn_Del_Click);
             // 
             // FrmUpdate_chs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 368);
-            this.Controls.Add(this.btn_next);
             this.Controls.Add(this.btn_Del);
             this.Controls.Add(this.btn_Mod);
             this.Controls.Add(this.btn_Add);
@@ -230,8 +256,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txt_xuehao;
-        private System.Windows.Forms.TextBox txt_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -243,6 +267,10 @@
         private System.Windows.Forms.RadioButton rdB_girl;
         private System.Windows.Forms.RadioButton rdB_boy;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_next;
+        private System.Windows.Forms.TextBox txt_name;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn_Picdialog;
+        private System.Windows.Forms.TextBox txt_xuehao;
+        private System.Windows.Forms.Label label6;
     }
 }
